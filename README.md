@@ -1,7 +1,7 @@
 # Excellence_Instagram
 ## Magento 2 Extension
 
-### Excellence Instagram allows  Instagram images to Magento 2 website
+### Excellence Instagram allows integrating Instagram images to Magento 2 website
 
 
 ## Features:
@@ -16,7 +16,12 @@
 ### Screenshots:
 <a href="https://ibb.co/BNhZsbD"><img src="https://i.ibb.co/SrknvbT/screenshot-33.png" alt="screenshot-33" border="0"></a>
 
+## Backend
+<a href="https://ibb.co/bFYJvM6"><img src="https://i.ibb.co/NrfSNdF/screenshot-37.png" alt="screenshot-37" border="0"></a><br/>
+<a href="https://ibb.co/wQypbyQ"><img src="https://i.ibb.co/3F1S81F/screenshot-36.png" alt="screenshot-36" border="0"></a>
 
+## Frontend 
+<a href="https://ibb.co/ssrcGZF"><img src="https://i.ibb.co/mh7dw3H/screenshot-35.png" alt="screenshot-35" border="0"></a>
 
 ___________________________________________________________________________________________________
 
