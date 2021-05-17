@@ -1,0 +1,9 @@
+.instagramheading {
+margin-bottom: 0px;
+display: flex;
+justify-content: center;
+}
+.instagramdescription{
+    display: flex;
+    justify-content: center;
+}
