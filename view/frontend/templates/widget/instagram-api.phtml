@@ -1,0 +1,57 @@
+<?php
+/** @var \Excellence\Instagram\Block\Widget\InstagramCurl  $block */
+?>
+<?php 
+if ($block->isEnable()) :
+$curldata = $block->getCurlData(); 
+$title = $block->getData('title');
+$description = $block->getData('description');
+$result = json_decode($curldata, true);
+
+echo '<h1 class="instagramheading">';
+echo $title;
+echo '</h1>';
+echo '<p class="instagramdescription">';
+echo $description;
+echo '</p>';
+
+echo "<div class='container'>";
+
+	foreach($result["data"] as $post )
+	{ 
+	  $media_url = isset($post["media_url"]) ? $post["media_url"] : "";
+	  $permalink = isset($post["permalink"]) ? $post["permalink"] : "";
+	  $id =     isset($post["id"]) ? $post["id"] : "";
+	  
+	  echo "<a href='{$media_url}' data-fancybox='images' class='instagramimages'>
+      		<img src='{$media_url}' alt='Image'/> <input type='hidden' value='{$permalink}'></a>";
+	 
+	}
+	echo "</div>";
+?>
+<?php endif; ?>
+
+<script type="text/javascript">
+    require([
+            'jquery',
+            'fancybox',
+             'domReady!',
+        ],
+    function($) {
+		 $( '[data-fancybox="images"]' ).fancybox({
+		    caption : function( instance, item ) {
+		       var permalink = $(this).find('input[type=hidden]').attr('value');
+		        var caption = $(this).data('caption') || '';
+		        if ( item.type === 'image' ) {
+		            caption = (caption.length ? caption + '<br />' : '') + '<a target="_blank" href="' + permalink + '"  class="viewurl">View Url</a>' ;
+		        }
+
+		        return caption;
+		    }
+	});
+
+	
+	});
+</script>
+
+

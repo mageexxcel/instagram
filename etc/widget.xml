@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<widgets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Widget:etc/widget.xsd">
+    <widget id="Instagram_Image_Slider" class="Excellence\Instagram\Block\Widget\InstagramCurl">
+        <label translate="true">Excellence Instagram Integration</label>
+        <description>Image Slider Putting On Frontend</description>
+        <parameters>
+          <parameter name="title" xsi:type="text" visible="true">
+                <label>Title</label>
+            </parameter>
+            <parameter name="description" xsi:type="text" visible="true">
+                <label>Description</label>
+            </parameter>
+            
+        </parameters>
+    </widget>
+</widgets>
